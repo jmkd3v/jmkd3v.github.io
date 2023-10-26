@@ -1,1 +1,219 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>jmk's website</title>
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="a list of my projects">
+  <meta property="og:title" content="jmkdev's website">
+  <meta property="og:description" content="a list of my projects">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://jmk.gg/">
+  <link rel="canonical" href="https://jmk.gg/">
+
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="bio">
+      <svg aria-label="jmkdev" class="wordmark" width="55" height="16" viewBox="0 0 55 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 13.9971V11.9976C0.551432 11.9976 1.02197 11.8016 1.41162 11.4097C1.80355 11.0223 1.99951 10.5518 1.99951 9.99805V5.99902H3.99902V9.99805C3.99902 11.1032 3.60824 12.0454 2.82666 12.8247C2.04508 13.6063 1.10286 13.9971 0 13.9971ZM1.99951 3.99951V2H3.99902V3.99951H1.99951Z" fill="currentColor"/>
+        <path d="M16.9971 11.998V9.99854H19V11.998H16.9971ZM5 11.998V7.99902C5 6.89616 5.38965 5.95394 6.16895 5.17236C6.95052 4.39079 7.89388 4 8.99902 4C10.1019 4 11.0441 4.39079 11.8257 5.17236C11.8849 5.23161 11.943 5.29199 12 5.35352C12.0547 5.29199 12.1117 5.23161 12.1709 5.17236C12.9525 4.39079 13.8947 4 14.9976 4C16.1027 4 17.0461 4.39079 17.8276 5.17236C18.6092 5.95394 19 6.89616 19 7.99902H16.9971C16.9971 7.44759 16.8011 6.97705 16.4092 6.5874C16.0195 6.19548 15.549 5.99951 14.9976 5.99951C14.4461 5.99951 13.9756 6.19548 13.5859 6.5874C13.194 6.97705 12.998 7.44759 12.998 7.99902V11.998H10.9985V7.99902C10.9985 7.44759 10.8026 6.97705 10.4106 6.5874C10.021 6.19548 9.55046 5.99951 8.99902 5.99951C8.44759 5.99951 7.97705 6.19548 7.5874 6.5874C7.19548 6.97705 6.99951 7.44759 6.99951 7.99902V11.998H5Z" fill="currentColor"/>
+        <path d="M20 11.9976V5.99902H23.999C24.5505 5.99902 25.021 5.80306 25.4106 5.41113C25.8026 5.02148 25.9985 4.55094 25.9985 3.99951H27.998C27.998 5.10238 27.6073 6.0446 26.8257 6.82617C26.7664 6.88542 26.7061 6.94352 26.6445 7.00049C26.7061 7.05518 26.7664 7.11214 26.8257 7.17139C27.6073 7.95296 27.998 8.89518 27.998 9.99805V11.9976H25.9985V9.99805C25.9985 9.44661 25.8026 8.97607 25.4106 8.58643C25.021 8.1945 24.5505 7.99854 23.999 7.99854H21.9995V11.9976H20ZM20 3.99951V2H21.9995V3.99951H20Z" fill="currentColor"/>
+        <path d="M32.999 11.9976C31.8939 11.9976 30.9505 11.6079 30.1689 10.8286C29.3896 10.047 29 9.10368 29 7.99854C29 6.89567 29.3896 5.95345 30.1689 5.17188C30.9505 4.3903 31.8939 3.99951 32.999 3.99951V5.99902C32.4476 5.99902 31.9771 6.19499 31.5874 6.58691C31.1955 6.97656 30.9995 7.4471 30.9995 7.99854C30.9995 8.54997 31.1955 9.02051 31.5874 9.41016C31.9771 9.80208 32.4476 9.99805 32.999 9.99805C33.5505 9.99805 34.021 9.80208 34.4106 9.41016C34.8026 9.02051 34.9985 8.54997 34.9985 7.99854V5.99902H36.998V7.99854C36.998 9.10368 36.6073 10.047 35.8257 10.8286C35.0441 11.6079 34.1019 11.9976 32.999 11.9976ZM34.9985 3.99951V2H36.998V3.99951H34.9985Z" fill="currentColor"/>
+        <path d="M41.999 9.99854V7.99902H43.9985V9.99854H41.999ZM41.999 11.998C40.8939 11.998 39.9505 11.6084 39.1689 10.8291C38.3896 10.0475 38 9.10417 38 7.99902C38 6.89616 38.3896 5.95394 39.1689 5.17236C39.9505 4.39079 40.8939 4 41.999 4C43.1019 4 44.0441 4.39079 44.8257 5.17236C45.6073 5.95394 45.998 6.89616 45.998 7.99902H43.9985C43.9985 7.44759 43.8026 6.97705 43.4106 6.5874C43.021 6.19548 42.5505 5.99951 41.999 5.99951C41.4476 5.99951 40.9771 6.19548 40.5874 6.5874C40.1955 6.97705 39.9995 7.44759 39.9995 7.99902C39.9995 8.55046 40.1955 9.021 40.5874 9.41064C40.9771 9.80257 41.4476 9.99854 41.999 9.99854V11.998Z" fill="currentColor"/>
+        <path d="M47 11.998V4H48.9995V9.99854H50.999C51.5505 9.99854 52.021 9.80257 52.4106 9.41064C52.8026 9.021 52.9985 8.55046 52.9985 7.99902H54.998C54.998 9.10417 54.6073 10.0475 53.8257 10.8291C53.0441 11.6084 52.1019 11.998 50.999 11.998H47ZM52.9985 5.99951V4H54.998V5.99951H52.9985Z" fill="currentColor"/>
+      </svg>
+      <p class="bio__text">
+        web developer on Roblox
+      </p>
+    </div>
+
+    <div class="links">
+      <a class="link" href="https://roblox.com/users/968108160/profile">
+        <div class="icon link__icon" data-icon="roblox" aria-hidden="true"></div>
+        <span class="link__label">Roblox</span>
+      </a>
+      <a class="link" href="https://jmk.gg">
+        <div class="icon link__icon" data-icon="discord" aria-hidden="true"></div>
+        <span class="link__label">Discord</span>
+      </a>
+      <a class="link" href="https://github.com/jmkd3v">
+        <div class="icon link__icon" data-icon="github" aria-hidden="true"></div>
+        <span class="link__label">GitHub</span>
+      </a>
+      <a class="link" href="https://twitter.com/jmkdev">
+        <div class="icon link__icon" data-icon="twitter" aria-hidden="true"></div>
+        <span class="link__label">Twitter</span>
+        <span class="link__extra">(inactive)</span>
+      </a>
+      <a class="link" href="https://mastodon.social/@jmkdev">
+        <div class="icon link__icon" data-icon="mastodon" aria-hidden="true"></div>
+        <span class="link__label">Mastodon</span>
+      </a>
+    </div>
+  </aside>
+  <main class="content">
+    
+    <article class="project">
+      <div class="project__left" aria-hidden="true">
+        <img src="project_icons/RoKitty.png" class="project__icon">
+      </div>
+      <div class="project__main">
+        <div class="project__header">
+          <h1 class="project__title">RoKitty</h1>
+          <span class="project__role">solo project</span>
+        </div>
+        <p class="project__description">
+          RoKitty is a work-in-progress alternative Roblox frontend. it’s the Roblox equivalent of an alternative Reddit, Twitter or Mastodon client.
+        </p>
+        
+        <div class="project__carousel">
+          
+          <a target="_blank" href="project_assets/RoKitty-banner.png" class="project-carousel-item" style="aspect-ratio: 16/9 !important">
+            <img class="project-carousel-item__image" src="project_assets/RoKitty-banner.png" alt="A screenshot of the top left corner of the RoKitty application on a rainbow gradient background">
+          </a>
+          
+          <a target="_blank" href="project_assets/RoKitty-window.png" class="project-carousel-item" style="aspect-ratio: 1467/1196 !important">
+            <img class="project-carousel-item__image" src="project_assets/RoKitty-window.png" alt="A screenshot of the RoKitty application">
+          </a>
+          
+        </div>
+        
+        <div class="project__links">
+          
+          <a class="project-link" href="https://rokitty.app">
+            <span class="project-link__label">
+              website
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project">
+      <div class="project__left" aria-hidden="true">
+        <img src="project_icons/Roblox Trackers.png" class="project__icon">
+      </div>
+      <div class="project__main">
+        <div class="project__header">
+          <h1 class="project__title">Roblox Trackers</h1>
+          <span class="project__role">solo project</span>
+        </div>
+        <p class="project__description">
+          Roblox Trackers is a series of trackers that watch for Roblox website and engine changes and notify developers of them through Discord and GitHub.
+        </p>
+        
+        <div class="project__links">
+          
+          <a class="project-link" href="https://github.com/RobloxTrackers">
+            <span class="project-link__label">
+              github
+            </span>
+          </a>
+          
+          <a class="project-link" href="https://twitter.com/RobloxTrackers">
+            <span class="project-link__label">
+              twitter
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project">
+      <div class="project__left" aria-hidden="true">
+        <img src="project_icons/RoAPI.svg" class="project__icon">
+      </div>
+      <div class="project__main">
+        <div class="project__header">
+          <h1 class="project__title">RoAPI</h1>
+          <span class="project__role">owner</span>
+        </div>
+        <p class="project__description">
+          RoAPI is a Discord community for web developers on the Roblox platform, providing support for the Roblox web API, Open Cloud, ro.py, and more.
+        </p>
+        
+        <div class="project__links">
+          
+          <a class="project-link" href="https://discord.gg/Qq88UgmqF2">
+            <span class="project-link__label">
+              discord
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project">
+      <div class="project__left" aria-hidden="true">
+        <img src="project_icons/RoAPI.svg" class="project__icon">
+      </div>
+      <div class="project__main">
+        <div class="project__header">
+          <h1 class="project__title">RoAPI Wiki</h1>
+          <span class="project__role">writer and maintainer</span>
+        </div>
+        <p class="project__description">
+          robloxapi.wiki provides resources and documentation for the Roblox web APIs.
+        </p>
+        
+        <div class="project__links">
+          
+          <a class="project-link" href="https://staging.robloxapi.wiki">
+            <span class="project-link__label">
+              wiki
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    <article class="project">
+      <div class="project__left" aria-hidden="true">
+        <img src="project_icons/ro.py.svg" class="project__icon">
+      </div>
+      <div class="project__main">
+        <div class="project__header">
+          <h1 class="project__title">ro.py</h1>
+          <span class="project__role">project maintainer and developer</span>
+        </div>
+        <p class="project__description">
+          ro.py is an open-source Python wrapper for the Roblox web API, allowing developers to write Python code that interacts with Roblox.
+        </p>
+        
+        <div class="project__links">
+          
+          <a class="project-link" href="https://github.com/ro-py/ro.py">
+            <span class="project-link__label">
+              repo
+            </span>
+          </a>
+          
+          <a class="project-link" href="https://ro.py.jmk.gg/dev">
+            <span class="project-link__label">
+              docs
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </article>
+    
+  </main>
+</body>
+</html>
