@@ -391,3 +391,12 @@ body {
     right: 10%;
   }
 }
+
+@media (max-width: 512px) {
+  .content {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
