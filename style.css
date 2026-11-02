@@ -89,6 +89,9 @@ body { background: white; }
 [data-icon=github] { --url: url(icons/light/github.svg) }
 [data-icon=mastodon] { --url: url(icons/light/mastodon.svg) }
 [data-icon=roblox] { --url: url(icons/light/roblox.svg) }
+[data-icon=hackerone] { --url: url(icons/light/hackerone.svg) }
+[data-icon=bluesky] { --url: url(icons/light/bluesky.svg) }
+[data-icon=email] { --url: url(icons/light/email.svg) }
 
 @media (prefers-color-scheme: dark) {
   [data-icon=twitter] { --url: url(icons/dark/twitter.svg) }
@@ -96,6 +99,9 @@ body { background: white; }
   [data-icon=github] { --url: url(icons/dark/github.svg) }
   [data-icon=mastodon] { --url: url(icons/dark/mastodon.svg) }
   [data-icon=roblox] { --url: url(icons/dark/roblox.svg) }
+  [data-icon=hackerone] { --url: url(icons/dark/hackerone.svg) }
+  [data-icon=bluesky] { --url: url(icons/dark/bluesky.svg) }
+  [data-icon=email] { --url: url(icons/dark/email.svg) }
 }
 
 /* everything else */
@@ -122,7 +128,7 @@ body {
 .sidebar {
   position: sticky;
   top: 0px;
-  width: 288px;
+  width: 304px;
   height: 100vh;
 
   display: flex;
@@ -164,6 +170,7 @@ body {
   flex-direction: row;
   align-items: center;
   border-radius: 8px;
+  font-size: 20px;
 
   background: transparent;
   transition: background 100ms linear;
@@ -180,14 +187,8 @@ body {
   transition-duration: 44ms;
 }
 
-.link__label {
-  font-size: 20px;
-}
-
 .link__extra {
-  font-size: 20px;
   color: var(--fg-1);
-  margin-left: 12px;
 }
 
 .sidebar::after {
@@ -199,6 +200,18 @@ body {
   right: 0px;
   width: 1px;
   background: radial-gradient(farthest-side, var(--border) 33%, var(--border) 66%, transparent)
+}
+
+.sidebar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 100%;
+  width: 60px;
+  background: linear-gradient(to right, #00000003 0%, transparent 100%);
+  z-index: -1;
 }
 
 .wordmark {
@@ -258,6 +271,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   padding-bottom: 24px;
+  min-width: 0px;
 
   overflow: clip;
 }
@@ -389,6 +403,9 @@ body {
     bottom: 0px;
     left: 10%;
     right: 10%;
+  }
+  .sidebar::before {
+  	display: none;
   }
 }
 
