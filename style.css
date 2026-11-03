@@ -123,6 +123,7 @@ body {
   padding-bottom: 48px;
   overflow: clip;
   gap: 32px;
+  min-width: 0px;
 }
 
 .sidebar {
@@ -260,7 +261,7 @@ body {
   font-weight: 500;
 }
 
-.project__role {
+.project__header-lower {
   color: var(--fg-1);
   font-size: 16px;
 }
